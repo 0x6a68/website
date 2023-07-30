@@ -1,0 +1,46 @@
+:root {
+  --tint: 40 55%;
+
+  --color-primary: #293d30;
+  --color-text: var(--color-primary);
+  --color-accent: #ff0145;
+  --color-neutral: hsl(var(--tint) 85%);
+  --color-background: var(--color-neutral);
+
+  --step--1: clamp(1rem, 1.01rem + -0.03vw, 0.98rem);
+  --step-0: clamp(1.13rem, 1.06rem + 0.31vw, 1.31rem);
+  --step-1: clamp(1.27rem, 1.1rem + 0.81vw, 1.75rem);
+  --step-2: clamp(1.42rem, 1.12rem + 1.51vw, 2.33rem);
+  --step-3: clamp(1.6rem, 1.1rem + 2.51vw, 3.11rem);
+
+  --gap: var(--step-3);
+
+  --font-family-sans: system-ui, -apple-system, sans-serif;
+  --font-family-monospace: ui-monospace, monospace;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  overflow-x: hidden;
+  margin: 0;
+  font-family: var(--font-family-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+  text-rendering: optimizeLegibility;
+  break-after: avoid;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+svg {
+  fill: currentColor;
+}
